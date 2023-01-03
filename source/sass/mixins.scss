@@ -36,6 +36,10 @@
   }
 }
 
+@mixin buttonColor {
+  background-color: rgba(202, 45, 45, 0.7);
+}
+
 // Desktop first
 
 @mixin vp-1919 {
