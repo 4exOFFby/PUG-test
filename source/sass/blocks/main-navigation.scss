@@ -1,22 +1,37 @@
 .main-navigation {
   background-color: #234424;
   font-size: $fz-default;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .main-navigation__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 70%;
+  gap: 5px;
+  margin-top: 5px;
 }
+
 
 .main-navigation__link {
   text-decoration: none;
   color: #f7fb1b;
+  padding: 10px;
 }
 
 .main-navigation__button {
-  color: #e310b9;
+  color: #dce310;
   cursor: pointer;
+  border: none;
+  padding: 10px;
 
   @include buttonColor;
 }

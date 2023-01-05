@@ -757,22 +757,49 @@ button,
 .main-navigation {
   background-color: #234424;
   font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 15px;
 }
 
 .main-navigation__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  width: 70%;
+  gap: 5px;
+  margin-top: 5px;
 }
 
 .main-navigation__link {
   text-decoration: none;
   color: #f7fb1b;
+  padding: 10px;
 }
 
 .main-navigation__button {
-  color: #e310b9;
+  color: #dce310;
   cursor: pointer;
+  border: none;
+  padding: 10px;
   background-color: rgba(202, 45, 45, 0.7);
 }
 
