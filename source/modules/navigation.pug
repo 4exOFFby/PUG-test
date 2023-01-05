@@ -1,0 +1,24 @@
+block variables
+  - let checkAdmin = true
+
+block navigation
+  .container
+    nav.main-navigation
+      ul.main-navigation__list
+        li.main-navigation__item
+          a.main-navigation__link(href="page-2.html", target="_blank")
+            | Новости
+        li.main-navigation__item
+          a.main-navigation__link(href="page-2.html")
+            | Каталог
+        li.main-navigation__item
+          a.main-navigation__link(href="page-2.html")
+            | О нас
+        li.main-navigation__item
+          if checkAdmin
+            a.main-navigation__link(href="page-2.html")
+              | Админ
+          else
+            a.main-navigation__link(href="page-2.html")
+              | Не админ
+      button.main-navigation__button(type="button") Нажми на меня
